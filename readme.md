@@ -33,6 +33,7 @@ cafe-management-system/
 
 ```sql
 SOURCE E:/PROJECTS/cafe-management-system/cafe.sql;
+```
 
 ### Step 2: Install Required Python Packages
 
