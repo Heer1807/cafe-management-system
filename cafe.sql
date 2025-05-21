@@ -1,0 +1,170 @@
+-- 1. Create the database
+CREATE DATABASE cafe;
+USE cafe;
+
+-- 2. MENU TABLE
+CREATE TABLE menu (
+    item VARCHAR(25)
+);
+
+INSERT INTO menu VALUES 
+('COFFEE'),
+('TEA'),
+('FRESH JUICE'),
+('FRAPPE'),
+('MILKSHAKE'),
+('BURGER'),
+('PIZZA'),
+('SALAD'),
+('DESSERT');
+
+-- 3. COFFEE TABLE
+CREATE TABLE coffee (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO coffee VALUES 
+('C1','ESPRESSO',150),
+('C2','AMERICANO',175),
+('C3','CAPPUCCINO',200),
+('C4','MOCHA',215),
+('C5','CAFE LATTE',235),
+('C6','CARAMEL MACCHIATO',250);
+
+-- 4. TEA TABLE
+CREATE TABLE tea (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO tea VALUES 
+('T1','BLACK TEA (EARL GREY)',75),
+('T2','FLAVOURED TEA',80),
+('T3','HIBISCUS',85),
+('T4','ROSE',85),
+('T5','JASMINE',85);
+
+-- 5. FRESH JUICE TABLE
+CREATE TABLE freshjuice (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO freshjuice VALUES 
+('F1','ORANGE',90),
+('F2','MANGO',90),
+('F3','PASSION',95),
+('F4','CARROT',100),
+('F5','PINEAPPLE',95),
+('F6','MIXED FRUIT',100),
+('F7','ABC-APPLE,BEET,CARROT',125);
+
+-- 6. FRAPPE TABLE
+CREATE TABLE frappe (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO frappe VALUES 
+('F1','CARAMEL',225),
+('F2','MOCHA',200),
+('F3','VANILLA BEAN',210),
+('F4','STRAWBERRY',220);
+
+-- 7. MILKSHAKE TABLE
+CREATE TABLE milkshake (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO milkshake VALUES 
+('M1','CHOCOLATE',100),
+('M2','VANILLA',100),
+('M3','STRAWBERRY',115),
+('M4','NUTELLA',130);
+
+-- 8. BURGER TABLE
+CREATE TABLE burger (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO burger VALUES 
+('B1','VEG GRILL',115),
+('B2','MAC N CHEESE',125),
+('B3','CHEESE N CHILLI',125);
+
+-- 9. PIZZA TABLE
+CREATE TABLE pizza (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO pizza VALUES 
+('P1','PIZZA MARGHERITA',240),
+('P2','QUATTRO VEGGIE',300),
+('P3','PIZZA DEK CARDINO',260),
+('P4','PIZZA MEDITERRANO',350),
+('P5','PIZZA AL PESTO',350);
+
+-- 10. SALAD TABLE
+CREATE TABLE salad (
+    code VARCHAR(5), 
+    item VARCHAR(50), 
+    price INT
+);
+
+INSERT INTO salad VALUES 
+('S1','MIXED GREENS WITH CRANBERRIES AND WALNUTS',250),
+('S2','GREEK SALAD',240),
+('S3','FALAFEL SALAD BOWL',250),
+('S4','CEASAR SALAD',250);
+
+-- 11. DESSERT TABLE
+CREATE TABLE dessert (
+    code VARCHAR(5), 
+    item VARCHAR(30), 
+    price INT
+);
+
+INSERT INTO dessert VALUES 
+('D1','CHOCOLATE HAZELNUT CAKE',250),
+('D2','LEMON CAKE',130),
+('D3','APPLE CINNAMON CAKE',130),
+('D4','CHOCOLATE WALNUT BROWNIE',150),
+('D5','STRAWBERRY CHEESECAKE',125),
+('D6','COFFEE CHEESECAKE',125);
+
+-- 12. BILL TABLE
+CREATE TABLE bill (
+    Item VARCHAR(50), 
+    Quantity INT, 
+    Price INT
+);
+
+-- 13. FINAL BILL TABLE
+CREATE TABLE finalbill (
+    Name VARCHAR(30), 
+    Amount INT
+);
+
+-- 14. TABLE TYPE TABLE
+CREATE TABLE tabletype (
+    TableType VARCHAR(25), 
+    ReservationCharges INT
+);
+
+INSERT INTO tabletype VALUES 
+('TABLE FOR TWO',25),
+('TABLE FOR FOUR',35),
+('TABLE FOR SIX',50),
+('TABLE FOR EIGHT',60),
+('TABLE FOR TEN',75);
